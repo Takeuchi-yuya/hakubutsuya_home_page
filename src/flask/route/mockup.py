@@ -9,6 +9,7 @@ def mock_main():
  
 @bp.route('/tech-blog')
 def tech_blog_main():
-    return render_template('html/mock-main.html')
+    blog_main = '# title1 \n sample sample'
+    return render_template('html/tech-blog.html',blog_main = blog_main)
 
 

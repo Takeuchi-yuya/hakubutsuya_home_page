@@ -8,8 +8,17 @@
                h1 {color:#ff7ff9;font-size:30pt;}
                 p{fontsize:14pt;} 
            </style>
-      </head></html>
+           <script src="https://taisukef.github.io/marked_md/marked.min.js"></script>
+           <script src="http://code.jquery.com/jquery.js"></script>
+
+      </head>
 <body> 
-    
+     <script type="text/javascript">
+          $(document).ready(function(){
+               var html = marked('{{blog_main}}');
+               $('#markdown').html(html);    
+             });
+      </script>
+     <div id="markdown"></div>
 </body>
 </html>
